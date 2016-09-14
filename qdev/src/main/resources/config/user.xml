@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!--name:package包的名称可以自定义,可以配置多个包; 
+		namespace:不同模块可以指定不同的空间,作用是区别不同模块相同的动作action名字的冲突问题 ;
+		extends:值直接或者间接的继承于struts-defaulet 
+			注:struts配置文件的加载顺序struts-default.xml->struts-plugin.xml->
+			struts.xml
+	-->
+	<package name="user" namespace="/" extends="struts-default">
+
+		<action name="login" class="cn.qdev.action.UserAction" method="login">
+			<result name="success">/view/indexTemp.jsp</result>
+			<result name="login">/view/login.jsp</result>
+		</action>
+		
+		
+		
+		
+             
+    </package>
+</struts>

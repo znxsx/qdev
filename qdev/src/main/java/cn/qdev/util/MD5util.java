@@ -45,7 +45,7 @@ public class MD5util {
     }    
         
     public static void main(String[] args) throws IOException {    
-        String user = "oneadmin";    
+        String user = "123456";    
         System.out.println("原始字符串 " + user);    
         System.out.println("MD5加密 " + encodeMD5String(user));    
         System.out.println("SHA加密 " + encodeSHAString(user));    

@@ -4,6 +4,16 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-
-  
+	<!-- 解决struts2的乱码问题 -->
+   	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+   	<!-- 设置自定义扩展名 -->
+   	<constant name="struts.action.extension" value="action,,html"></constant>
+   	<!-- 设置开发struts2的模式 报错时会提供友好的界面提示 -->
+   	<constant name="struts.devMode" value="true"></constant>
+   	<!-- 设置配置文件修改后自动重新加载  开发中推荐使用 -->
+   	<constant name="struts.configuration.xml.reload" value="true"></constant>
+  	<!-- 使用include标签来实现团队分模块开发 -->
+	<include file="config/user.xml"></include>
+	
+	
 </struts>
